@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100e1c">
+  <meta name="description" content="宇航员站在暮色中的紫罗兰花海，望向地平线上的黑洞。浏览器实时渲染的 WebGL 2 场景。">
+  <title>黑洞与紫罗兰</title>
+  <link rel="icon" href="assets/eclipse.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="experience" aria-label="黑洞与紫罗兰交互式数字场景">
+    <canvas id="world" aria-busy="true" aria-keyshortcuts="+ -"
+      aria-label="一位背对镜头的宇航员站在紫色花海中，远处是流动的黑洞吸积盘"></canvas>
+    <p id="error" class="notice" role="alert" hidden></p>
+    <noscript><p class="notice">请启用 JavaScript 以进入场景。</p></noscript>
+  </main>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
